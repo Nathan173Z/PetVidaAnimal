@@ -1,41 +1,53 @@
 import styled, { css } from "styled-components/native";
-import { TextInput } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
 
 export const Container = styled.View`
-  width: 100%;
   flex-direction: row;
-  padding: 0 63px;
-  top: 17px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
 `;
 
 export const InputArea = styled.View`
-  flex: 1;
-  flex-direction: row;
-  border-radius: 16px;
-  background-color: #FFFFFF;
 `;
 
-export const Input = styled(TextInput)`
-  flex: 1;
-  padding: 0 25px;
+export const Input = styled.TextInput`
+background-color: #FFFFFF;
+border-radius: 16px;
+width: 250px;
+height: 28px;
+text-align: center;
 `;
 
-export const IconSearch = styled.TouchableOpacity`
-top: 1.5px;
-padding: 0 19px;
-`
 
 export const Icon = styled(Feather)`
 font-size: 25px;
-color:rgba(236, 219, 182, 1)
+color:rgba(236, 219, 182, 1);
+top: 30px;
+left: 10px;
+background-color: red;
 `
 
 export const IconMenu = styled(Feather)`
-font-size: 30px;
-color:#FFFF;
+font-size: 40px;
+color: #FFF;
+`
+export const ContainerCart = styled.View`
+
 `
 
-export const ContainerIcon = styled.View`
-left: 40px;
+export const IconCar = styled(Feather)`
+font-size: 37px;
+color: #FFF;
+left: 17px;
+top: 10px;
+
+`
+
+export const ContainerMenu = styled.View`
+top: 12px;
+right: 17px;
+`
+
+export const InputSearch = styled.View`
 `
