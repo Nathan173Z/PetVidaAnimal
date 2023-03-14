@@ -13,6 +13,7 @@ border-radius: 16px;
 width: 250px;
 height: 30px;
 text-align: center;
+padding-right: 25px;
 `;
 
 export const IconMenu = styled(Feather)`
@@ -23,7 +24,6 @@ top:6px
 export const ContainerCart = styled.TouchableOpacity`
 left: 17px;
 top: 18px;
-
 `
 
 export const IconCar = styled(Feather)`
@@ -38,5 +38,17 @@ right: 17px;
 `
 
 export const InputSearch = styled.View`
-top: 18px;
+top: 27px;
+`
+
+export const IconSearch = styled(Feather)`
+  font-size:25px;
+  color: #ECDBB6;
+  margin-right: 10px;
+`;
+
+export const Button = styled.TouchableOpacity`
+bottom:27px;
+left:16px;
+width: 40px;
 `

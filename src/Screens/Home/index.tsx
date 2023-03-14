@@ -1,37 +1,26 @@
 import React from "react";
 import { InputHome } from "../../components/Input";
+import { Slider } from "../../components/SliderHome";
+import { ShowIcon } from "../../components/ShowIcon";
 
 
 
 import { 
     Header,
     Container,
-    Image,
-    ButtonSlide,
-    ScrollView,
-    ScrollIcons,
-    IconImg,
+    Lista,
 } from "./styles"
 
-export function Home(){
-    return(
+export function Home(){ 
+    return( 
         <Container>
-            <Header>             
-                <InputHome/>
-            </Header>
+        <Header>             
+            <InputHome/>
+        </Header>
 
-            <ScrollView> 
-                <ButtonSlide>
-                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
-                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
-                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
-                </ButtonSlide>
-            </ScrollView>
+        <Slider/>
+        <ShowIcon/>
 
-            <ScrollIcons> 
-                <IconImg/>
-            </ScrollIcons>
-
-        </Container>
+    </Container>
     )
 }

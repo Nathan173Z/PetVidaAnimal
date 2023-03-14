@@ -5,6 +5,7 @@ export const Header = styled.View`
 background-color: #10ABD4;
 width: 100%;
 height: 70px;
+
 `
 
 export const Container = styled.View`
@@ -17,15 +18,6 @@ width: 353px;
 height: 200px;
 top: 19px;
 `
-export const ButtonSlide = styled.TouchableOpacity`
-flex-direction: row;
-` 
-export const ScrollView = styled.ScrollView``;
+export const Lista = styled.View` 
 
-
-export const ScrollIcons = styled.View` 
-
-`
-export const IconImg = styled.Image` 
-    
 `
