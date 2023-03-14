@@ -8,7 +8,8 @@ import { ShowIcon } from "../../components/ShowIcon";
 import { 
     Header,
     Container,
-    Lista,
+    Card,
+    ScrollView,
 } from "./styles"
 
 export function Home(){ 
@@ -18,8 +19,14 @@ export function Home(){
             <InputHome/>
         </Header>
 
+
+        <ScrollView>
         <Slider/>
         <ShowIcon/>
+            <Card> 
+
+            </Card>
+        </ScrollView>
 
     </Container>
     )
