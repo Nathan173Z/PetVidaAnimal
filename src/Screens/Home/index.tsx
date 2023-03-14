@@ -1,22 +1,37 @@
 import React from "react";
-import { ScrollView } from "react-native";
-import { Octicons, FontAwesome5 } from '@expo/vector-icons'; 
 import { InputHome } from "../../components/Input";
-import { Feather } from '@expo/vector-icons';
+
 
 
 import { 
-    Text,
     Header,
-
+    Container,
+    Image,
+    ButtonSlide,
+    ScrollView,
+    ScrollIcons,
+    IconImg,
 } from "./styles"
 
 export function Home(){
     return(
-        <ScrollView>
+        <Container>
             <Header>             
-                <InputHome/>                                                  
+                <InputHome/>
             </Header>
-        </ScrollView>
+
+            <ScrollView> 
+                <ButtonSlide>
+                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
+                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
+                   <Image source={{uri:'https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg'}}/>
+                </ButtonSlide>
+            </ScrollView>
+
+            <ScrollIcons> 
+                <IconImg/>
+            </ScrollIcons>
+
+        </Container>
     )
 }
