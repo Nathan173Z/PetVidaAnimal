@@ -5,9 +5,7 @@ export const Header = styled.View`
 background-color: #10ABD4;
 width: 100%;
 height: 70px;
-
 `
-
 export const Container = styled.View`
 justify-content: center;
 align-items: center;

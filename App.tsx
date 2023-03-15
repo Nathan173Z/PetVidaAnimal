@@ -1,6 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'react-native';
 import { Home } from './src/Screens/Home'
+import { MeuPet } from './src/Screens/Meupet';
 
 export default function App(){ 
   return (
@@ -8,7 +9,7 @@ export default function App(){
        <StatusBar 
         backgroundColor="black" 
       />
-    <Home/>
+    <MeuPet/>
     </>
   )
 }
