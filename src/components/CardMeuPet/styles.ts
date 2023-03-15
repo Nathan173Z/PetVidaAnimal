@@ -20,7 +20,6 @@ border-radius: 50px;
 export const Title = styled.Text`
 color:#FFFFFF;
 font-size: 22px;
-left: 22px;
 `
 export const Info = styled.Text`
 font-size:15px;
