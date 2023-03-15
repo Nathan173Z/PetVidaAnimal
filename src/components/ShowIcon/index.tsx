@@ -1,5 +1,6 @@
 import React from 'react';
-import { FlatList, Image } from 'react-native';
+import { FlatList, Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Container, Item, ImageContainer } from './styles';
 
 
@@ -13,21 +14,30 @@ const serviceoutros= require('../../assets/feliz.png');
 
 
 const data = [
-  { id: '1', source: servicemeupet },
-  { id: '2', source: servicecachorro },
-  { id: '3', source: servicegato },
-  { id: '4', source: servicepassaro },
-  { id: '5', source: servicepeixe },
-  { id: '6', source: serviceoutros },
+  { id: '1', source: servicemeupet, title: 'Meu Pet' },
+  { id: '2', source: servicecachorro, title: 'Cachorro' },
+  { id: '3', source: servicegato, title: 'Gato' },
+  { id: '4', source: servicepassaro, title: 'Pássaro' },
+  { id: '5', source: servicepeixe, title: 'Peixe' },
+  { id: '6', source: serviceoutros, title: 'Outros' },
   // outras imagens
 ];
 
+
 export function ShowIcon() {
+  const navigation = useNavigation();
+
+  const handleServicePress = (serviceId, title ) => {
+    navigation.navigate(`Serviço ${serviceId}`);
+  };
+
   const renderItem = ({ item }) => (
     <Item>
-      <ImageContainer>
-        <Image source={item.source} resizeMode="cover" />
-      </ImageContainer>
+      <TouchableOpacity onPress={() => handleServicePress(item.id, item.title)}>
+        <ImageContainer>
+          <Image source={item.source} resizeMode="cover" />
+        </ImageContainer>
+      </TouchableOpacity>
     </Item>
   );
 

@@ -12,8 +12,9 @@ padding-left: 20px;
 padding-top: 12px;
 `
 export const Image = styled.Image`
-width: 100px;
-height: 100px;
+width: 105px;
+height: 105px;
+bottom: 4px;
 border-radius: 50px;
 
 `

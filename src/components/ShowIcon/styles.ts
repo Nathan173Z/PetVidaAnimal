@@ -5,7 +5,7 @@ export const Container = styled.View`
   height: 60px;
 `;
 
-export const Item = styled.TouchableOpacity`
+export const Item = styled.View`
   margin-right: 6px;
   width:72px;
 `;

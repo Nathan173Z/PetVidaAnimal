@@ -10,19 +10,22 @@ import {
     ContainerIcon,
 } from "./styles"
 import { CardMeuPet } from "../../components/CardMeuPet";
+import { ItemSeparator } from "../../components/ItemSeparator";
+import { Inputcallback } from "../../components/Inputcallback";
 
 export function MeuPet(){ 
     return( 
     <Container>
         <Header>             
-           <InputHome/>
-        </Header>     
+           <Inputcallback/>
+        </Header>
     <ContainerIcon>
      <Title> 
         Meus Pets
      </Title>
         <IconMais name="add-circle-outline" size={30} color="black" />
     </ContainerIcon>
+    <ItemSeparator/>     
      <CardMeuPet/>
     </Container>
     )

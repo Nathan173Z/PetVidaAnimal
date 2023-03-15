@@ -1,15 +1,13 @@
-import React from 'react'
-import { StatusBar } from 'react-native';
-import { Home } from './src/Screens/Home'
-import { MeuPet } from './src/Screens/Meupet';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { AppRoutes } from './src/routes/app.routes'
 
-export default function App(){ 
+
+export default function App() {
+
   return (
-    <>
-       <StatusBar 
-        backgroundColor="black" 
-      />
-    <MeuPet/>
-    </>
-  )
+      <NavigationContainer>
+        <AppRoutes/>
+      </NavigationContainer>
+  );
 }
