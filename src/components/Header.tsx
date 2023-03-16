@@ -1,29 +1,22 @@
 import {HStack, Input, Icon, IconButton} from 'native-base'
 import { MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 import {Alert} from 'react-native'
-import { useNavigation } from '@react-navigation/native'
 
 
 
-export function SearchBar(){
-  const navigation = useNavigation()
-
-  function Goback() {
-    navigation.navigate('Serviço 1')
-  }
-  
+export function HeaderInput(){
   
 
   return(
     <HStack h="60px" bg="#10ABD4" w="full"  alignItems="center" justifyContent="center" top="5">
       <IconButton 
-       onPress={Goback} 
         variant="ghost" 
         size="lg" 
         borderRadius="full"
         _icon={{
-          as: MaterialIcons,
-          name: "arrow-back",
+          as: FontAwesome5,
+          name: "shopping-cart",
           color: "white",
           size: "xl"
         }}

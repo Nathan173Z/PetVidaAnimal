@@ -14,8 +14,10 @@ import { Home } from './src/Screens/Home';
 export default function App() {
 
   return (
+<NavigationContainer>
   <NativeBaseProvider>
-    <MeuPet/>
+    <AppRoutes/>
   </NativeBaseProvider>
+</NavigationContainer>
   );
 }
