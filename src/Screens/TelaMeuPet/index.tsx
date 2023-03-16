@@ -13,7 +13,7 @@ import { CardMeuPet } from "../../components/CardMeuPet";
 import { ItemSeparator } from "../../components/ItemSeparator";
 import { Inputcallback } from "../../components/Inputcallback";
 
-export function MeuPet(){ 
+export function TelaMeuPet(){ 
     return( 
     <Container>
         <Header>             

@@ -20,10 +20,12 @@ export const Products = styled.View`
 
 `
 export const Imagem = styled.Image`
+top: 10px;
+left: 5px;
 
 `
 export const Price = styled.Text`
-padding-top: 12px;
+padding-top: 5px;
 `
 export const Info = styled.Text`
 padding-top: 5px;
@@ -34,14 +36,14 @@ width: 220px;
 `
 export const ContainerInfo = styled.View`
 flex-direction:column;
-left: 10px;
+left: 30px;
 `
 
 export const InfoProdutcs = styled.TouchableOpacity`
 flex-direction: row;
 top: 30px;
 left: 10px;
-padding-bottom: 25px;
+padding-bottom: 20px;
 `
 export const TextVerMais = styled.Text`
 color: #FF6000;
