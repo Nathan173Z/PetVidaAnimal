@@ -15,7 +15,7 @@ export function SearchBar(){
   
 
   return(
-    <HStack h="60px" bg="#10ABD4" w="full"  alignItems="center" justifyContent="center" top="5">
+    <HStack h="60px" bg="#10ABD4" w="full"  alignItems="center" justifyContent="center" >
       <IconButton 
        onPress={Goback} 
         variant="ghost" 

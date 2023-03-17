@@ -1,6 +1,6 @@
 import React from "react";
-import { InputHome } from "../../components/Input"; 
 import { Ionicons } from '@expo/vector-icons'; 
+import { FontAwesome5 }from '@expo/vector-icons';
 
 import { 
     Header,
@@ -12,12 +12,13 @@ import {
 import { CardMeuPet } from "../../components/CardMeuPet";
 import { ItemSeparator } from "../../components/ItemSeparator";
 import { Inputcallback } from "../../components/Inputcallback";
+import { HeaderInput } from "../../components/Header";
 
 export function TelaMeuPet(){ 
     return( 
     <Container>
         <Header>             
-           <Inputcallback/>
+           <Inputcallback />
         </Header>
     <ContainerIcon>
      <Title> 

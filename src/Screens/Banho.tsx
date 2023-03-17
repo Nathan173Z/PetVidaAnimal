@@ -8,7 +8,7 @@ import { ButtonSoap } from "../components/ButtonSoap";
 export function Banho(){
 
   return(
-    <Center >
+    <Center bg="#f3ead5" flex={1} mb='3'>
       <SearchBar />
 
       <Heading 

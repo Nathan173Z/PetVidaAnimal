@@ -4,8 +4,14 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import {Alert} from 'react-native'
 
 
+type Props = { 
+  NameIcon: String;
+  IconStyle: String
+}
 
-export function HeaderInput(){
+
+
+export function HeaderInput({NameIcon, IconStyle}: Props ){
   
 
   return(
@@ -15,15 +21,15 @@ export function HeaderInput(){
         size="lg" 
         borderRadius="full"
         _icon={{
-          as: FontAwesome5,
-          name: "shopping-cart",
+          as: IconStyle,
+          name: NameIcon,
           color: "white",
-          size: "xl"
+          size: "md"
         }}
           
         />
       <Input 
-        variant="rounded" w="294px" 
+        variant="rounded" w="222px" 
         InputLeftElement={<Icon as={<MaterialIcons name="search" color="black" />} 
           size={5} 
           ml={4} 

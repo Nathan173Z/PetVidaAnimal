@@ -1,47 +1,74 @@
 import React, { useState } from 'react';
-import {
-  Container,
-  Title,
-  Logo,
-  Input,
-  Button,
-  ButtonText,
-  CriarConta,
-  TextCriarConta,
-  ButtonLogar,
-  Icon,
-  ButtonTextGoogle,
-} from './styles';
-// import img from '../../../assets/Logo.png';
-// import icon from '../../../assets/imgIcongoogle.png';
+import { View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
+import {styles} from './styles'
+import img from '../../assets/Logo.png'
+import { useNavigation } from "@react-navigation/native";
+import Icon from '../../assets/imgIcongoogle.png'
+import {Alert} from 'react-native';
 
-export default function LoginScreen() {
+export function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // implementar lógica de autenticação
-  }
+  const navigation = useNavigation();
+
+    function HadleLogin() {
+        navigation.navigate('Home')
+      }
+
+    function HadleCadastrar() {
+        navigation.navigate('Cadastrar')
+      }
+
+      function AlertLogin (){ 
+        Alert.alert('ATENÇÃO', 'VÁ PARA ENTRAR SEM CADASTRO')
+      }
 
   return (
-    <Container>
-      <Title>Vida Animal</Title>
-      {/* <Logo source={img} /> */}
-      <Input
+    <View style={styles.container}>
+      <Text style={styles.title}>Vida Animal</Text>
+      <Image source={img} style={styles.logo} />
+      <TextInput 
+        style={styles.input}
         placeholder="E-mail"
         value={email}
         onChangeText={setEmail}
       />
-      <Input
+      <TextInput 
+        style={styles.input}
         placeholder="Senha"
         secureTextEntry={true}
         value={password}
         onChangeText={setPassword}
       />
-      <Button onPress={handleLogin}>
-        <ButtonText>Entrar</ButtonText>
-      </Button>
+      <TouchableOpacity>
+          <Text style={styles.esquciminhasenha}>ESQUECI MINHA SENHA </Text>
+      </TouchableOpacity>
 
-      </Container>
+      <TouchableOpacity style={styles.button} >
+        <Text style={styles.buttonText } onPress={AlertLogin}>ENTRAR</Text>
+      </TouchableOpacity>
 
-)}
+      <View style={styles.criarconta}>
+        <TouchableOpacity>
+          <Text style={styles.textcriaraconta} onPress={HadleCadastrar}>
+            CRIAR CONTA
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.textcriaraconta} onPress={HadleLogin}>
+            ENTRAR SEM CADASTRO
+          </Text>
+        </TouchableOpacity>
+      </View>
+     
+      <TouchableOpacity style={styles.buttonlogar} >
+        <Image source={Icon} style={styles.icon} />
+        <Text style={styles.buttonTextgoogle}>Logar com o Google</Text>
+      </TouchableOpacity>
+     
+      
+    </View>
+  );
+}
+

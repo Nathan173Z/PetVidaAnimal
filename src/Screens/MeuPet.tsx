@@ -53,7 +53,7 @@ export function MeuPet() {
   return (
 
     
-    <Center>
+    <Center bg="#f3ead5" flex={1} mt='5'>
       <SearchBar />
       <Box w="full" py="12px" borderColor="black" borderBottomWidth={1}>
         <Text fontSize="30px" alignSelf="center">

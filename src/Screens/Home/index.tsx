@@ -1,6 +1,7 @@
 import React from "react";
 import { Slider } from "../../components/SliderHome";
 import { ShowIcon } from "../../components/ShowIcon";
+import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from "@react-navigation/native";
 
 
@@ -18,7 +19,7 @@ export function Home(){
 
     return( 
         <Container>
-            <HeaderInput/>
+            <HeaderInput NameIcon='shopping-cart' IconStyle={FontAwesome5}/>
         <ScrollView>
         <Slider/>
         <ShowIcon/>
